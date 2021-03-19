@@ -56,6 +56,26 @@ Let’s make sure we only process POST requests for our customized greeting.
 {% include "src/functions/hello_name_post.js" %}
 ```
 
+### OneGraph Example
+<form class="hello_onegraph_its_netlify-form" action="/.netlify/functions/hello_onegraph_its_netlify" method="POST">
+  <label>
+    Your name
+    <input type="text" name="name">
+  </label>
+
+  <label>
+    Song query to play
+    <input type="text" name="query">
+  </label>
+
+  <label>
+    A lovely message
+    <input type="text" name="message">
+  </label>
+  <button class="button" type="submit">Send a song!</button>
+</form>
+
+
 ### Try it out
 
 <form class="form-example" action="/.netlify/functions/hello_name_post" method="POST">
